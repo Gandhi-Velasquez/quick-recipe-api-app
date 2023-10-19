@@ -1,0 +1,73 @@
+.recipe-card {
+    max-width: 75vw; /* Set max-width to 80% of the viewport width */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center; /* Center the content horizontally */
+  }
+
+  .recipe-card-content {
+    margin: 10px;
+  }
+  
+  .recipe-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .recipe-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 40px;
+    text-align: start; /* Align the ingredients to the left */
+  }
+  
+  .recipe-card li {
+    margin-bottom: 8px;
+    padding-top: 4px;
+    position: relative; /* Add relative positioning */
+    padding-left: 20px; /* Add padding to the left for the dot */
+  }
+  
+  .recipe-card li::before {
+    content: "\2022"; /* Unicode character for a bullet point */
+    position: absolute;
+    left: 0;
+    color: black;
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 600px) {
+    .recipe-card {
+      max-width: 90vw;
+      margin: 0 auto;
+    }
+    
+    .recipe-card img {
+      margin-bottom: 10px;
+    }
+    
+    .recipe-card h2 {
+      margin-bottom: 5px;
+    }
+    
+    .recipe-card ul {
+      padding-top: 20px;
+    }
+    
+    .recipe-card li {
+      margin-bottom: 5px;
+      padding-top: 2px;
+      padding-left: 15px;
+    }
+  }
+  
